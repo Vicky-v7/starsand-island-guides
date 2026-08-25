@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starsand Island Farm Layout Guide: Blueprints & GMax Tips</title>
+<meta name="description" content="Plan your Starsand Island farm: how Layout blueprints work, GMax crop grids, sprinkler placement tricks, and the known pain points to design around.">
+<link rel="canonical" href="https://starsand.vickyv7.com/guides/farm-layout/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏝️</text></svg>">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FTJ11KN74B"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-FTJ11KN74B');
+</script>
+<style>
+:root{--sand:#f7f1e3;--deep:#1f3a4d;--teal:#2a9d8f;--coral:#e76f51;--ink:#26323a;--muted:#5c6b76;--card:#ffffff;--line:#e6ddca}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--sand);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.75;font-size:17px}
+header{background:var(--deep);padding:0}
+.navbar{max-width:960px;margin:0 auto;display:flex;align-items:center;gap:8px;padding:14px 20px;flex-wrap:wrap}
+.logo{color:#fff;font-weight:700;font-size:19px;text-decoration:none;margin-right:auto;font-family:-apple-system,Helvetica,sans-serif}
+.logo em{color:#8fd8cc;font-style:normal}
+nav.main a{color:#cfe3e0;text-decoration:none;padding:6px 12px;border-radius:6px;font-size:15px;font-family:-apple-system,Helvetica,sans-serif}
+nav.main a:hover{background:rgba(255,255,255,.12);color:#fff}
+nav.main a.active{background:var(--teal);color:#fff}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+.breadcrumb{font-size:13px;color:var(--muted);padding:16px 0 0;font-family:-apple-system,Helvetica,sans-serif}
+.breadcrumb a{color:var(--teal);text-decoration:none}
+main{padding:8px 0 48px}
+h1{font-size:clamp(26px,4.5vw,36px);line-height:1.25;margin:18px 0 6px;color:var(--deep)}
+.updated{font-size:13px;color:var(--muted);margin-bottom:20px;font-family:-apple-system,Helvetica,sans-serif}
+h2{font-size:22px;margin:34px 0 12px;color:var(--deep);border-bottom:2px solid var(--line);padding-bottom:6px}
+h3{font-size:18px;margin:22px 0 8px;color:var(--deep)}
+p{margin:12px 0}
+ul,ol{margin:12px 0 12px 26px}
+li{margin:6px 0}
+a{color:var(--teal)}
+table{border-collapse:collapse;width:100%;margin:16px 0;font-size:15px;background:var(--card)}
+th,td{border:1px solid var(--line);padding:9px 12px;text-align:left;vertical-align:top}
+th{background:#eef6f4;font-family:-apple-system,Helvetica,sans-serif;font-size:14px}
+.hero{background:linear-gradient(160deg,var(--deep) 0%,#2b5876 100%);color:#fff;border-radius:16px;padding:44px 36px;margin-top:22px}
+.hero h1{color:#fff;margin-top:0}
+.hero p{color:#d8e6ee;max-width:640px}
+.hero .cta{display:inline-block;background:var(--coral);color:#fff;text-decoration:none;padding:11px 26px;border-radius:8px;font-family:-apple-system,Helvetica,sans-serif;font-weight:600;margin-top:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;text-decoration:none;color:var(--ink);display:block}
+.card:hover{border-color:var(--teal)}
+.card b{display:block;color:var(--deep);font-family:-apple-system,Helvetica,sans-serif;margin-bottom:6px}
+.card span{font-size:14px;color:var(--muted)}
+.callout{background:#fff8ec;border-left:4px solid var(--coral);padding:12px 18px;border-radius:0 8px 8px 0;margin:16px 0;font-size:15px}
+.tbc{color:#a06a1f;font-size:0.9em}
+.related{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-top:36px}
+.related b{font-family:-apple-system,Helvetica,sans-serif;color:var(--deep)}
+footer{background:var(--deep);color:#b9cdd8;padding:30px 0;font-size:14px;font-family:-apple-system,Helvetica,sans-serif}
+footer a{color:#8fd8cc}
+footer .disclaimer{font-size:12px;color:#7d95a3;margin-top:12px}
+footer .sig{font-size:11px;color:#5e7684;margin-top:8px;text-align:right}
+@media(max-width:640px){.hero{padding:30px 22px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="navbar">
+    <a class="logo" href="/">🏝️ Starsand Island <em>Guides</em></a>
+    <nav class="main">
+      <a href="/">Home</a>
+      <a href="/guides/">Guides</a>
+      <a href="/guides/characters/">Characters</a>
+      <a href="/guides/gift-codes/">Codes</a>
+      <a href="/guides/review/">Review</a>
+    </nav>
+  </div>
+</header>
+<div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> › <a href="/guides/">Guides</a> › <span>Farm Layout</span></nav>
+<main>
+<h1>Starsand Island Farm Layout Guide: Blueprints, GMax Grids &amp; Tips</h1>
+<p class="updated">Last updated 2026-08-25 · Based on version 1.0 and community sources — items marked “TBC” are awaiting verification.</p>
+<p>Farm planning in Starsand Island revolves around three things: the in-game "Layout" blueprint system for whole building sets, grid planning for GMax (giant) crops and sprinklers, and working around a few known quirks — farm plots can't be moved once placed, fences don't actually contain animals, and greenhouses can't be widened directly. Here's what the community has worked out, mostly from Early Access play, flagged where 1.0 may differ.</p>
+
+<h2>The "Layout" System: Buyable Building Sets</h2>
+<p>In Starsand Island, a <b>Layout</b> is a purchasable set blueprint — players mention named ones like Spring Court, a rustic house layout, and an amusement park layout. Placing one is not plug-and-play. You need:</p>
+<ul>
+<li>The matching <b>building blueprint set</b> unlocked (e.g. Chinese-style blueprints) — locked components like certain windows or stairs simply won't build;</li>
+<li>The <b>land plots</b> it sits on unlocked;</li>
+<li>All <b>materials</b> on hand — one player complained a single layout wanted 70,000 stone. The materials bar at the bottom of a Layout's detail page scrolls horizontally and lists everything, and any furniture in the set must be crafted by you in advance.</li>
+</ul>
+<p>Placing a Layout over an existing farm triggers <b>overlap mode</b>: your old objects get buried inside the new structures and must be moved out one by one. The community fix is to mass-select and relocate everything first, place the Layout on clean ground, then move things back — and note animal barns need their animals re-assigned after being moved. Two more gotchas from Early Access reports: a purchased Layout can "vanish" if it gets stashed in a storage chest or realm box, and some players hit leftover un-selectable building pieces after loading a Layout (reported as a bug). Whether player-to-player Layout sharing ships as an official feature was, per a player's paraphrase of the roadmap, planned alongside mod support <span class="tbc">(TBC — player paraphrase, not official)</span>; Nexus Mods already has a Starsand Island section.</p>
+
+<h2>The Official Layout Design Contest</h2>
+<p>The developer has run a <b>Homestead Layout Design Contest</b>, and the official subreddit carries entry posts like "Pavilion of Serenity", "Golden Lotus", and "The Glass Garden" (June 2026). Browsing contest entries and the subreddit's top farm-showcase posts is genuinely the best free source of layout inspiration right now, since there's no official layout guide.</p>
+
+<h2>GMax Crop Grids and Sprinkler Placement</h2>
+<p>GMax (giant) crops need a <b>3x3 block of the same crop</b> to form. The layout debate comes from one observed behavior: a GMax forming in the middle of a big field "locks out" the surrounding tiles from forming their own. Player strategies (all Early Access experience, no official numbers exist <span class="tbc">(TBC)</span>):</p>
+<ul>
+<li><b>15x3 narrow strips</b> — every 3x3 window is viable without dead centers;</li>
+<li><b>9x9 staggered planting</b> — plant 9x3 per day for three days so harvests (and GMax chances) rotate;</li>
+<li><b>Big 9x12+ fields</b> — the "quantity is everything" camp argues total planted area beats any clever shape.</li>
+</ul>
+<p>Beehives reportedly sit directly on farm plots without blocking planting; flowers plus hives speed crop growth but do not trigger GMax (player reports). For sprinklers: their range is a <b>circular AOE, not a square</b>, and they come in tiers (Sprinkler I / III). A tested trick is placing one sprinkler over the center plot of a 3x3 and nudging it in Build mode (C) with overlapping placement so the radius covers all corners — exact radii per tier are unpublished <span class="tbc">(TBC)</span>. Sprinklers must be activated with F, and it's easy to accidentally toggle one off while harvesting; "sprinklers suddenly auto off" threads were still appearing after 1.0.</p>
+
+<h2>Three Known Pain Points to Plan Around</h2>
+<ul>
+<li><b>Farm plots cannot be moved.</b> Once placed, a crop plot can only be smashed and rebuilt — players have repeatedly asked for Sandrock-style plot moving. Plan your field positions early. Fruit trees get big; more than one player wished they'd put orange trees at the back. Trees can at least be reclaimed with a pickaxe.</li>
+<li><b>Fences don't contain animals.</b> Chickens, rabbits, even horses walk straight through fencing — treat fences as decoration. Free-roaming animals do clear weeds and bugs from fields, so some players lean into it. If an animal gets stuck in rocks or a river, lift its pen in Build mode to reset its position, or remove and re-add it from the barn. Whether a functional fence gate exists went unanswered in the threads, and no evidence shows 1.0 fixed fence collision <span class="tbc">(TBC)</span>.</li>
+<li><b>Greenhouses have a fixed footprint.</b> You can't stretch one — but build a second greenhouse flush against the first and the shared wall opens up, merging them into one wider interior. Greenhouses are built from the Construction menu under Production → Farming.</li>
+</ul>
+
+<h2>Real Player Layouts for Inspiration</h2>
+<p>From a July 2026 Hopeland-plot write-up: cottage top-left, animals below it, two medium fish ponds top-center, a 2x5 orchard, a 4x8 flower field, then 212 tiles of soil, 50 trellis tiles, a 72-tile GMax zone, paddy fields, and two greenhouses for mushrooms. Another player dedicates all three Hopeland plots to growing — one orchard, two crop fields subdivided into flower-breeding, bulk crops, paddies, and a 4x20 flower strip for bees, with ducks, rabbits and chickens along the edges. Others put 10 beehives in the middle of a 12x10 plot ringed with moonflower — and yes, hives reportedly work fine on a shed roof. Official plot sizes and unlock prices aren't published; all tile counts above are players describing their own saves <span class="tbc">(TBC)</span>.</p>
+
+<div class="related"><b>Related guides:</b> <a href="/guides/make-money/">Make Money</a> · <a href="/guides/beginner-guide/">Beginner Guide</a> · <a href="/guides/fishing/">Fishing Guide</a></div>
+
+</main>
+</div>
+<footer>
+  <div class="wrap">
+    <p>Official links: <a href="https://store.steampowered.com/app/2966320/Starsand_Island/" rel="noopener">Steam</a> · see the game's official site and community for authoritative updates.</p>
+    <p class="disclaimer">Unofficial fan guide. Not affiliated with or endorsed by the developer or publisher of Starsand Island. Game details verified against public sources where possible; entries marked "to be confirmed" await verification. Some information may become outdated as the game updates.</p>
+    <p class="sig">✦ by Claude Code</p>
+  </div>
+</footer>
+<script>new Image().src="https://ping.vickyv7.com/p?s=starsand"</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+[
+  {
+    "url": "/",
+    "fragment": "home.html",
+    "crumb": "Home",
+    "title": "Starsand Island Guide Hub – Tips, Characters & Romance",
+    "description": "Complete Starsand Island guides: beginner tips, character list, gift preferences, and romance. Fan-made hub for Seed Sparkle Lab's cozy island life sim."
+  },
+  {
+    "url": "/guides/",
+    "fragment": "guides.html",
+    "crumb": "Guides",
+    "title": "Starsand Island Guides: Full List of Tips & Walkthroughs",
+    "description": "Browse all Starsand Island guides in one place: getting started, characters and gifts, romance, money-making, fishing, farm layout, codes, and reviews."
+  },
+  {
+    "url": "/guides/beginner-guide/",
+    "fragment": "beginner-guide.html",
+    "crumb": "Beginner Guide",
+    "title": "Starsand Island Beginner Guide: Tips for Your First Hours",
+    "description": "Starsand Island beginner guide: tutorial walkthrough, all five professions, mission priorities, stamina rules, and the community-tested early money curve."
+  },
+  {
+    "url": "/guides/characters/",
+    "fragment": "characters.html",
+    "crumb": "Characters",
+    "title": "Starsand Island Characters: All NPCs & Romance Options",
+    "description": "Every confirmed Starsand Island character: 15 romanceable NPCs, 6 with official date profiles, plus family and supporting cast — with heart event details."
+  },
+  {
+    "url": "/guides/gift-guide/",
+    "fragment": "gift-guide.html",
+    "crumb": "Gift Guide",
+    "title": "Starsand Island Gift Guide: All Loved & Liked Gifts",
+    "description": "Complete Starsand Island gift guide: every NPC's loved and liked gifts, safe universal picks like Pasture Grass, affection points, and the Moonflower myth."
+  },
+  {
+    "url": "/guides/romance/",
+    "fragment": "romance.html",
+    "crumb": "Romance",
+    "title": "Starsand Island Romance Guide: Dating, Move In & Partners",
+    "description": "How romance works in Starsand Island: all 15 partners, heart events, dating, same-sex romance, and Move In — the cohabitation system replacing marriage."
+  }
+]
