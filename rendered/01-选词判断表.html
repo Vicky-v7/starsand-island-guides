@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang='zh'><head><meta charset='utf-8'><style>
+body{font-family:-apple-system,'PingFang SC',sans-serif;background:#f6f4ef;margin:0;padding:36px;color:#222;line-height:1.8}
+.doc{max-width:820px;margin:0 auto;background:#fff;border:1px solid #e2ddd3;border-radius:14px;padding:44px 52px;box-shadow:0 2px 14px rgba(0,0,0,.05)}
+h1{font-size:26px;border-bottom:2px solid #0f62fe;padding-bottom:12px}
+h2{font-size:19px;margin-top:30px;color:#0f45b5}
+h3{font-size:16px;margin-top:22px}
+blockquote{border-left:3px solid #0f62fe;background:#f0f5ff;margin:14px 0;padding:8px 16px;color:#445;font-size:14px}
+li{margin:4px 0}
+code{background:#f0ede6;padding:1px 6px;border-radius:4px;font-size:13px}
+strong{color:#000}
+.footer{max-width:820px;margin:14px auto 0;text-align:right;font-size:11px;color:#bbb}
+</style></head><body><div class='doc'><h1>出海游戏热词站 · 选词判断表</h1>
+<p>调研日期：2026-08-25 ｜ 方法论：生财航海手册（SteamDB 找新词 → Google Trends 对比 GPTs → KD/替代信号 → 首页竞争）</p>
+<p>工具链：真实 Chrome CDP（SteamDB / Google Trends / Google SERP）+ Steam 官方 API + Google Autocomplete API</p>
+<hr>
+<h2>一、候选池来源</h2>
+<p>SteamDB 首页 Popular Releases / Most Played（2026-08-25 抓取，Cloudflare 盾后真实页面）：</p>
+<ul>
+<li>How to Fish — 24h 峰值 341,691，当前在线 161,139（全 Steam 第 5，超过 Apex）</li>
+<li>Mortal Shell II — 24h 峰值 33,111</li>
+<li>Starsand Island — 24h 峰值 1,748（发售首周）</li>
+<li>淘汰项：Hearth and Hamlet（峰值 3.7k 但题材同质、信号弱）、TBH: Task Bar Hero（5/27 上线已 3 个月，不够新）、Bongo Cat/老牌大作（无机会）</li>
+</ul>
+<p>上线时间来源：Steam 官方 API <code>store.steampowered.com/api/appdetails</code>（2026-08-25 查询）。</p>
+<hr>
+<h2>二、三候选完整判断表</h2>
+<h3>候选 1：How to Fish</h3>
+<ul>
+<li><strong>游戏名</strong>：How to Fish（Dazed Games，$4.95 休闲钓鱼模拟）</li>
+<li><strong>上线时间与来源</strong>：2026-08-20（Steam API，appid 4001890）——5 天前，一周内陡升的超级新词</li>
+<li><strong>Trends 趋势形态</strong>（trends.google.com，全球/近30天，2026-08-25 截图）：基线 ~40（⚠️ 含通用&quot;how to fish&quot;钓鱼词噪音），8/20 起陡升至 100（8/23），当前回落至 ~85 仍高位 → <strong>涨，未见尖峰崩塌</strong></li>
+<li><strong>相对 GPTs 热度</strong>：均值柱远超 GPTs（GPTs 曲线贴地 ~2-3，倍数 10x+；但该倍数被通用词基线抬高，真实游戏词部分无法拆分）</li>
+<li><strong>KD</strong>：Similarweb <strong>不可得</strong>（/keyword/ 页 404，app.similarweb.com 需登录且本机无法解析；2026-08-25）。替代信号：&quot;how to fish game&quot; Google 结果数 ~9.75 亿（被通用钓鱼词严重污染，无参考价值）；裸词 &quot;how to fish&quot; 的 SEO 对手是 wikiHow/垂钓媒体级巨头</li>
+<li><strong>细分关键词数量估计</strong>（Google Autocomplete API，2026-08-25）：游戏向长尾少且畸形——必须带 &quot;game&quot; 后缀（how to fish game ps5/steam/release date/price…约 10 条）；攻略向长尾（best rod / pufferfish / money）<strong>全部被 Stardew/Minecraft/Terraria/现实钓鱼劫持</strong>。Trends Rising 里 &quot;how to fish pufferfish boss&quot; 是 Breakout（游戏攻略需求真实存在，但需求会挂在别的词形上）</li>
+<li><strong>首页竞争</strong>（google.com &quot;how to fish game&quot;，2026-08-25）：Steam 商店页 x2、YouTube x3、Reddit x2——无攻略站无 wiki，看似空隙大</li>
+<li><strong>判断</strong>：<strong>不做</strong>。玩家热度是真的（34 万在线），但词根被现实世界&quot;怎么钓鱼&quot;污染到 SEO 层面不可用：裸词进不去，长尾不聚焦，Google 需要很久才能学会把 &quot;how to fish + 攻略词&quot; 分给游戏。游戏本体 $4.95 短内容，可写攻略页数有限。天生残疾的 SEO 词。</li>
+</ul>
+<h3>候选 2：Mortal Shell II</h3>
+<ul>
+<li><strong>游戏名</strong>：Mortal Shell II（魂类 ARPG，$49.99，Cold Symmetry）</li>
+<li><strong>上线时间与来源</strong>：2026-08-20（Steam API，appid 2584270）——5 天前</li>
+<li><strong>Trends 趋势形态</strong>（&quot;Mortal Shell&quot;，全球/近30天，2026-08-25 截图）：8/13 前贴地，Beta+发售陡升，8/23 达 100，当前回落至 ~72 → <strong>涨后高位小回落，非陷阱形态</strong></li>
+<li><strong>相对 GPTs 热度</strong>：均值约为 GPTs 的数倍（均值柱 ~20 vs GPTs 贴地）→ <strong>超过 GPTs</strong></li>
+<li><strong>KD</strong>：Similarweb <strong>不可得</strong>（同上）。替代信号：Google 结果数 ~7,720 万；一代老 IP 存量内容多（fextralife wiki、IGN 攻略体系现成）</li>
+<li><strong>细分关键词数量估计</strong>：中等偏多——autocomplete 已出 boss（bosses/boss locations/boss guide/wheelchair boss/final boss）、builds、demo/beta/review/coop 等 15+ 条；魂类天然攻略需求深</li>
+<li><strong>首页竞争</strong>（google.com &quot;mortal shell 2&quot;，2026-08-25）：Steam、官网 mortalshell.com、PlayStation/Xbox 商店、<strong>IGN 评测</strong>、Reddit。一代已有成熟 fextralife wiki 和大媒体攻略矩阵，发售周 IGN/GameSpot/TheGamer 会火力全开</li>
+<li><strong>判断</strong>：<strong>不做</strong>（备选）。词是真热且攻略需求深，但这是大媒体+老牌魂类 wiki 的主场，新手小站抢 boss guide 排位胜率低。除非做超细分（中文本地化攻略），否则避开。</li>
+</ul>
+<h3>候选 3：Starsand Island（星沙岛）⭐</h3>
+<ul>
+<li><strong>游戏名</strong>：Starsand Island（海岛生活模拟/cozy 农场，Seed Lab，$31.99，多平台 Steam/Switch2/PS5/Xbox）</li>
+<li><strong>上线时间与来源</strong>：2026-08-18（Steam API，appid 2966320）——7 天前，正好一周</li>
+<li><strong>Trends 趋势形态</strong>（全球/近30天，2026-08-25 截图）：发售前基线 ~15（Kickstarter/愿望单期），8/18 陡升至 100，回落后在 ~50-62 <strong>走平企稳</strong>，当前 ~48 且尾端翘头 → <strong>尖峰后高位平台，不是崩塌形陷阱词</strong></li>
+<li><strong>相对 GPTs 热度</strong>：30 天均值略低于 GPTs（均值柱 27 vs 37，约 GPTs 的 3/4）；<strong>但当前时点曲线已反超 GPTs</strong>（~50 vs ~30）且 GPTs 在阴跌 → 接近~略超，方向对</li>
+<li><strong>KD</strong>：Similarweb <strong>不可得</strong>（/keyword/ 404 + app 端需登录无法解析，2026-08-25 实测）。替代信号法（注明）：①Google 结果数 ~7,770 万（与 Mortal Shell 2 同量级但媒体覆盖少得多）；②首页无 fandom 大 wiki、无 IGN 系霸屏；③已有 3 个新注册小站进首页（见下）→ 综合估计 <strong>KD 低（新手可打，约等于 0-30 档）</strong></li>
+<li><strong>细分关键词数量估计</strong>：<strong>极多，30+ 条已验证</strong>（Autocomplete，2026-08-25）：mods/switch/romance/wiki/update/multiplayer/gift guide/gift codes/fishing rods/fishing map/characters favorite gifts/best way to make money/best crops/best farm layout/best romance…典型 Stardew 型攻略金矿结构</li>
+<li><strong>首页竞争</strong>（google.com，2026-08-25）：主词首页 = Steam/官网/Kickstarter/Nintendo/Xbox/Reddit/Wikipedia——全是官方+社区，<strong>无攻略站占位</strong>。攻略词 &quot;starsand island gift guide&quot; 首页 = Reddit + Steam 社区 WIP 指南 + Eurogamer/TheGamer/TechRaptor + <strong>farmfriends.gg / starisland.wiki / screenhype.co.uk 三个新手小站已挤进首页</strong> → 小站可进首页已被直接证实，且大盘 wiki（fandom）缺位</li>
+<li><strong>判断</strong>：<strong>做</strong>。新（7 天）、涨（企稳反超 GPTs）、攻略需求密（30+ 长尾）、首页有小站先例、fandom 缺位——五个条件全中。</li>
+</ul>
+<hr>
+<h2>三、最终推荐：Starsand Island ⭐</h2>
+<p><strong>为什么是它而不是热度更高的 How to Fish / Mortal Shell II：</strong></p>
+<ol>
+<li><strong>词的&quot;纯度&quot;决定 SEO 可行性</strong>：How to Fish 玩家数是它的 90 倍，但词根被现实钓鱼污染，长尾全被 Stardew/Minecraft 劫持，做站等于跟 wikiHow 抢词；Starsand Island 是唯一词形，搜索意图 100% 指向游戏。</li>
+<li><strong>内容型游戏 = 攻略站的页面供给</strong>：生活模拟自带 NPC 好感度/送礼表/作物利润表/钓鱼图鉴/浪漫线/农场布局等<strong>可结构化、可批量生产</strong>的内容矩阵（30+ 已验证长尾），一个词能撑起 50-100 页站；How to Fish 是 $4.95 短流程休闲游戏，写完 10 页就见底。</li>
+<li><strong>竞争窗口刚打开且被验证</strong>：fandom wiki 缺位、IGN 系只做了零星 gift guide，而 farmfriends.gg、starisland.wiki 这类<strong>明显是发售周新建的小站已经拿到首页排名</strong>——别人已替你验证&quot;新手小站能挤进去&quot;，现在跟进还在窗口期。</li>
+<li><strong>信息源充足</strong>：官方站 starsandisland.com、Steam 社区 WIP 攻略、r/Starsandisland 子版、Kickstarter 更新日志、Wikipedia 条目、Eurogamer/TechRaptor 零散攻略——一手素材够洗够扩，且游戏多平台（Switch2/PS5）意味着主机玩家会持续贡献搜索增量。</li>
+<li><strong>趋势形态健康</strong>：不是&quot;尖峰后崩塌&quot;的陷阱词——发售峰后回落到基线 3 倍以上的平台期，且 cozy 游戏靠更新（roadmap/update 已在 autocomplete 里）有长尾生命周期。</li>
+<li>风险备注：r/CozyGamers 有一条 &quot;Starsand Island controversy&quot; 讨论帖（2026-08 抓取），做站前值得看一眼是什么争议（若是 AI 素材争议，反而是流量话题页）。</li>
+</ol>
+<hr>
+<h2>四、附：Starsand Island 细分搜索需求线索（12 条，给下一关选题用）</h2>
+<p>来源：Google Autocomplete API + SERP People Also Ask + Reddit/Steam 社区标题，2026-08-25 抓取</p>
+<ol>
+<li><strong>starsand island gift guide / characters favorite gifts</strong> — 全角色送礼表（首页尚无完整版，Steam 社区那篇还是 WIP）</li>
+<li><strong>starsand island romance / best romance options</strong> — 可攻略角色+浪漫线（PAA：&quot;Will Starsand Island have romance?&quot;）</li>
+<li><strong>starsand island best way to make money / best crops for money</strong> — 赚钱与作物利润表</li>
+<li><strong>starsand island fishing guide / fishing rods / fishing map / fishing locations / fishing quest</strong> — 钓鱼系统一整族（至少 5 个子词）</li>
+<li><strong>starsand island best farm layout</strong> — 农场布局</li>
+<li><strong>starsand island characters（wiki/list/age/likes）</strong> — 角色图鉴族</li>
+<li><strong>starsand island gift codes（free/reddit）</strong> — 兑换码页（时效型流量，更新即流量）</li>
+<li><strong>starsand island mods</strong> — MOD 需求已冒头</li>
+<li><strong>starsand island switch / switch 2 / ps5 / console</strong> — 平台购买决策页（PAA：&quot;Is Starsand Island on Switch?&quot; &quot;Will it come to console?&quot;）</li>
+<li><strong>starsand island worth buying / review</strong> — 评测型（PAA：&quot;Is Starsand Island worth buying?&quot;）</li>
+<li><strong>starsand island update / roadmap</strong> — 版本更新追踪页</li>
+<li><strong>starsand island multiplayer</strong> — 联机疑问页</li>
+</ol>
+<p>（+彩蛋线索：best way to get fiber、best items to sell——资源获取族还能继续挖）</p>
+<hr>
+<h2>数据可得性声明</h2>
+<ul>
+<li>Similarweb KD：<strong>不可得</strong>（www.similarweb.com/keyword/* 返回 404；app.similarweb.com 需登录且 DNS 无法解析；2026-08-25 实测）。KD 判断采用替代信号：Google 结果数量级 + 首页小站存在性 + fandom/大媒体占位情况，均已在表中注明。</li>
+<li>Google Trends 数值为截图目测读数（相对值 0-100），非 API 精确值。</li>
+<li>所有玩家数/峰值来自 SteamDB 首页实时快照（2026-08-25），非日均。</li>
+</ul>
+<p>— by Claude Code · 2026-08-25</p></div><div class='footer'>✦ by Claude Code · 生财 AI Agent 架构师航海作业 · Vicky</div></body></html>
